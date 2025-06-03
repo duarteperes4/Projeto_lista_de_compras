@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adicionar Item</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8">
+  <title>Adicionar Item</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Adicionar Item à Lista de Compras</h1>
-    <form action="{{ url_for('adicionar_item') }}" method="post" class="input-container">
-        <input type="text" name="itemName" placeholder="Nome do item" required>
-        <input type="number" name="itemQuantity" placeholder="Quantidade" min="1" value="1">
-        <button type="submit">Adicionar Item</button>
-    </form>
-    <p><a href="{{ url_for('index') }}">Voltar à Lista</a></p>
+  <h1>Adicionar Compras</h1>
+  <form>
+    <label for="item">Nome do item:</label>
+    <input type="text" id="item" name="item">
+    <button type="submit">Adicionar</button>
+  </form>
+  <a href="index.html">Voltar</a>
 </body>
 </html>
