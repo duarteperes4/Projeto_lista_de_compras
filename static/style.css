@@ -1,0 +1,35 @@
+body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 0 20px;
+  }
+  h1 {
+      text-align: center;
+  }
+  .input-container {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+  }
+  input, button, a {
+      padding: 8px;
+      font-size: 16px;
+      text-decoration: none;
+      color: #000;
+  }
+  a {
+      text-decoration: underline;
+      color: #007bff;
+  }
+  button {
+      cursor: pointer;
+  }
+  ul {
+      list-style: none;
+      padding: 0;
+  }
+  li {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+  }

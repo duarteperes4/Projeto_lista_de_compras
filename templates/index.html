@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Lista de Compras</h1>
+    <p><a href="{{ url_for('adicionar_item') }}">Adicionar Novo Item</a></p>
+    <ul id="listaCompras">
+        {% for index, item in shopping_list|enumerate %}
+            <li>
+                <span>{{ item.name }} (Qtd: {{ item.quantity }})</span>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
